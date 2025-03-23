@@ -1,0 +1,366 @@
+/********** BBALLELITE CSS **********/
+:root {
+    --primary: #FB5B21;
+    --secondary: #BDBDBF;
+    --light: #F4F5F8;
+    --dark: #222429;
+}
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+    font-size: inherit;
+    margin-left: 0;
+}
+
+h1,
+h2,
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+h3,
+h4,
+.font-weight-semi-bold {
+    font-weight: 600 !important;
+}
+
+h5,
+h6,
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+
+.btn {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.btn-primary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 30px;
+    height: 30px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 0;
+    border-radius: 0;
+    z-index: 99;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-family: 'Oswald', sans-serif;
+    margin-right: 30px;
+    padding: 40px 0;
+    color: var(--light);
+    font-size: 17px;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+@media (max-width: 991.98px) {
+    .navbar-dark .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+}
+
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(34, 36, 41, .8);
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h4 {
+        font-size: 18px;
+        font-weight: 500 !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 30px;
+        font-weight: 600 !important;
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.bg-hero {
+    background: linear-gradient(rgba(34, 36, 41, .8), rgba(34, 36, 41, .8)), url(../img/tete.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+.programe::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: calc(100% - 45px);
+    top: 135px;
+    left: 0;
+    background: var(--dark);
+    z-index: -1;
+}
+
+.team-item img {
+    transition: .5s;
+}
+
+.team-item:hover img {
+    transform: scale(1.2);
+}
+
+.team-item .team-overlay {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    bottom: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(34, 36, 41, .9);
+    transition: .5s;
+    opacity: 0;
+}
+
+.team-item:hover .team-overlay {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+}
+
+.Testimonial-carousel .owl-nav {
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+}
+
+.Testimonial-carousel .owl-nav .owl-prev,
+.Testimonial-carousel .owl-nav .owl-next {
+    position: relative;
+    margin: 0 5px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: var(--primary);
+    font-size: 22px;
+    border-radius: 45px;
+    transition: .5s;
+}
+
+.Testimonial-carousel .owl-nav .owl-prev:hover,
+.Testimonial-carousel .owl-nav .owl-next:hover {
+    color: var(--dark);
+}
+
+.Testimonial-carousel .owl-item img {
+    width: 90px;
+    height: 90px;
+}
+
+.blog-item img {
+    transition: .5s;
+}
+
+.blog-item:hover img {
+    transform: scale(1.2);
+}
+
+@media (min-width: 991.98px) {
+    .credit {
+        background: var(--primary);
+    }
+}
+
+.main-banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* Ajuste à la hauteur de l'écran */
+    overflow: hidden;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+    /* Couvre tout l'écran */
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    /* Assombrit légèrement pour une meilleure lisibilité */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.caption h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.caption h6 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+h1.m-0.display-4.text-primary.text-uppercase {
+    color: white;
+    /* Couleur par défaut */
+}
+
+h1.m-0.display-4.text-primary.text-uppercase span.next {
+    color: white;
+}
+
+h1.m-0.display-4.text-primary.text-uppercase span.play {
+    color: #FB5B21;
+}
+
+.sponsors-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.sponsors-logos div {
+    max-width: 80px; /* Ajuste la taille des logos */
+}
+
+.sponsors-logos img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(1); /* Évite tout effet de gris */
+    background: transparent;
+}
+.sponsors-logos img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(100%); /* Rend les logos en noir et blanc */
+    transition: filter 0.3s ease-in-out; /* Ajoute une transition fluide */
+}
+
+.sponsors-logos img:hover {
+    filter: grayscale(0%); /* Remet en couleur au survol */
+}
+
+.sponsors-logos div {
+    background: #ffffff; /* Fond blanc */
+    width: 100px; /* Ajuste la taille du carré */
+    height: 100px; /* Ajuste la taille du carré */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; /* Coins légèrement arrondis */
+    padding: 10px; /* Espacement intérieur */
+}
+
+
+
+/* Décalage d’animation pour chaque logo pour un effet naturel */
+.sponsors-logos div:nth-child(1) {
+    animation-delay: 0s;
+}
+.sponsors-logos div:nth-child(2) {
+    animation-delay: 0.5s;
+}
+.sponsors-logos div:nth-child(3) {
+    animation-delay: 3s;
+}
+.sponsors-logos div:nth-child(4) {
+    animation-delay: 1.5s;
+} 
+
+
+
+.video-container video {
+    width: 100vw;  /* Prend toute la largeur de l'écran */
+    height: auto;
+    background-color: black;
+    transform: translateY(-20%);
+}
+
+.team-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cela permet de remplir tout le conteneur */
+    object-position: top; /* Cette ligne va faire remonter la vidéo */
+    display: block;
+}
+
+.logo {
+    max-width: 50px;
+    max-height: 50px;
+    margin-left: 10px;
+    align-self: center;
+    margin-top: -15px; /* Remonte le logo de 5 pixels */
+}
