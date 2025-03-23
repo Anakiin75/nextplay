@@ -364,3 +364,22 @@ h1.m-0.display-4.text-primary.text-uppercase span.play {
     align-self: center;
     margin-top: -15px; /* Remonte le logo de 5 pixels */
 }
+
+.position-relative {
+    position: relative;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 15px; /* Ajuste la position du texte */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    color: white;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    width: 90%; /* Ajuste la largeur pour ne pas dépasser l’image */
+}
