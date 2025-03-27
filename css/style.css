@@ -383,3 +383,42 @@ h1.m-0.display-4.text-primary.text-uppercase span.play {
     border-radius: 5px;
     width: 90%; /* Ajuste la largeur pour ne pas dépasser l’image */
 }
+
+.form-container {
+    background: var(--dark);
+    color: var(--light);
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-container button:hover {
+    background: #e04a1b;
+}
+
+.form-container a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
