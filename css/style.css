@@ -129,7 +129,7 @@ h6,
 }
 
 .bg-hero {
-    background: linear-gradient(rgba(34, 36, 41, .8), rgba(34, 36, 41, .8)), url(../img/tete.jpg) top center no-repeat;
+    background: linear-gradient(rgba(20, 74, 211, 0), rgba(34, 36, 41, .8)), url(../img/tete.jpg) top center no-repeat;
     background-size: cover;
 }
 
@@ -422,3 +422,4 @@ h1.m-0.display-4.text-primary.text-uppercase span.play {
     margin-top: 10px;
     color: white;
 }
+

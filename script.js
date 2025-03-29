@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("contact-form").addEventListener("submit", function(event) {
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
         event.preventDefault(); // Empêche le rechargement de la page
 
         const formData = {
@@ -14,15 +14,15 @@ document.addEventListener("DOMContentLoaded", function() {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formData)
         })
-        .then(response => response.json())
-        .then(data => {
-            alert("Message envoyé avec succès !");
-            document.getElementById("contact-form").reset();
-        })
-        .catch(error => {
-            alert("Erreur lors de l'envoi du message.");
-            console.error("Erreur :", error);
-        });
+            .then(response => response.json())
+            .then(data => {
+                alert("Message envoyé avec succès !");
+                document.getElementById("contact-form").reset();
+            })
+            .catch(error => {
+                alert("Erreur lors de l'envoi du message.");
+                console.error("Erreur :", error);
+            });
     });
 });
 
